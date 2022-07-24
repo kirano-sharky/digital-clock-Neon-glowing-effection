@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0; 
+  font-family: "Poppins";
+}
+           
+html, body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #000;
+}        
+
+.包裝 {
+  height: 100px;
+  width: 360px;
+  position: relative;
+  background: linear-gradient(135deg, #8a3ab9, #bc2a8d,	#fccc63,#fbad50)	;
+  border-radius: 10px;
+  cursor: default;
+  animation: 1.5s linear infinite;
+}
+            
+.包裝 .展示,
+.包裝 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+        
+.包裝 .展示 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: #1e1d1f;
+  height: 85px;
+  width: 345px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.包裝 .展示 #時間 {
+  line-height: 85px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #8a3ab9, #bc2a8d,	#fccc63,#fbad50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:  動畫 1.5s linear infinite;
+}
+
+@keyframes 動畫 {
+  100% {
+    filter: hue-rotate(360deg)
+  }
+}
+
+.包裝 span {
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  border-radius: 10px;
+}
+        
+.包裝 span:first-child {
+  filter: blur(20px);
+}
+
+.包裝 span:last-child {
+  filter: blur(20px);
+}
